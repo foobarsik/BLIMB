@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BLIMB - Protect your eyes</title>
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/libs/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+
+    <div class="top">
+        <img src="images/logo.png" class='logo'/> 
+        <a class="blimb-link" href="http://blimb.su" target="_blank">BLIMB</a>
+        <button id="toggleAlarm">Отключить</button>
+    </div>
+
+    <div class="wrapper">
+        <label>Делать перерыв каждые</label>
+        <div class="select-wrapper">
+            <label for="interval"></label>
+            <select id="interval" name="interval">
+                <option value="20">20 мин</option>
+                <option value="30">30 мин</option>
+                <option value="60">1 ч</option>
+                <option value="120">2 ч</option>
+            </select>
+        </div>
+
+        <div id="countdown-clock">
+            <span class="hours">00</span><!--
+         --><span> : </span><!-- 
+         --><span class="minutes">00</span><!-- 
+         --><span> : </span><!-- 
+         --><span class="seconds">00</span>
+        </div>
+    </div>
+
+<script src="js/countdown.js"></script>
+<script src="js/popup.js"></script>
+</body>
+</html>
